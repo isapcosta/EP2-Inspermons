@@ -36,9 +36,21 @@
 	{
 		"nome" : "Roots",
                 "level" : 2,
+<<<<<<< HEAD
 		"volume": 30,
 		"vida" : 85,
 		"Barreira Sonora" : 20
+=======
+
+		"volume": 20,
+		"vida" : 85,
+		"Barreira Sonora" : 25
+
+		"volume": 30,
+		"vida" : 85,
+		"Barreira Sonora" : 20
+
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a
 	},
 	{
 		"nome" : "Crunk",

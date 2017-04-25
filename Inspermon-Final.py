@@ -27,7 +27,11 @@ Jogador=[{"nome" : "Compositor","level" : 1 ,"timbre de voz" : 15,"espectro sono
          {"nome" : "Maestro","level" : 3 ,"timbre de voz" :35,"espectro sonoro":40,"vida" : 120,"Barreira Sonora" : 40}]
 Notasmusicais=0
 Coins=0
+<<<<<<< HEAD:Inspermon-Final.py
 salvos = open("salvos.txt", "a")
+=======
+
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
 Nome_do_Jogador=input("Qual é o seu Nickname?")
 inspermoninicial=Jogador[0]   
 print("Bem vindo {0} ! Voce esta entrando agora no mundo dos inspermons.".format(Nome_do_Jogador))
@@ -130,7 +134,11 @@ while i==0:
         opcoes=["com","com","sem"]
         opcoes2=["sem","com"]
         opcoes3=["sem","sem","com"]
+<<<<<<< HEAD:Inspermon-Final.py
         evasiva=[0,0,0,0,0,0,0,1,2,2,2]
+=======
+        evasiva=[0,0,0,0,0,0,0,1,2]
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
         if batalha==1:
             
             while VidaJogador > 0 and VidaOponente > 0:
@@ -142,13 +150,33 @@ while i==0:
                         print("O inimigo desviou do seu golpe.Que azar !")
                         
                     elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
+<<<<<<< HEAD:Inspermon-Final.py
+=======
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                         DAJ=Poder1Jogador - DefesaOponente
                         if DAJ<=0:
                             print("Seu golpe nâo surtiu efeito no inimigo.")
                             DAJ=0
+<<<<<<< HEAD:Inspermon-Final.py
                         elif DAJ>0:
                             print("Você atacou !")
                             VidaOponente = VidaOponente - DAJ
+=======
+                        VidaOponente = VidaOponente - DAJ
+                        
+                        
+                        if VidaOponente <= 0:
+                            print("Você derrotou o : {0}".format(inimigo))
+                            Notasmusicais=Notasmusicais+10
+                            Coins=Coins+20
+                            print("coins",Coins)
+                            print("notas",Notasmusicais)
+                        
+                    else:
+                            print("Voce deu um ataque critico!")
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                             print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                             print("Sua vida:",VidaJogador)
                         
@@ -189,6 +217,7 @@ while i==0:
                         if DAOP<=0:
                             print("Golpe do inimigo nao surtiu efeito em você.")
                             DAOP=0
+<<<<<<< HEAD:Inspermon-Final.py
                         elif DAOP>0:
                             print("Você foi atacado !")
                             VidaJogador = VidaJogador - DAOP
@@ -199,6 +228,15 @@ while i==0:
                         
                     elif escolha2==2 and VidaOponente>0 and VidaJogador>0:
                         print("O oponente tentará um ataque critico! Que azar!")
+=======
+                        VidaJogador = VidaJogador - DAOP
+                        if VidaJogador <= 0:        
+                            print("Você perdeu! para o : {0}".format(inimigo))
+                    else:
+                        print("O oponente lhe deu um ataque critico!")
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                         DAOP=PoderOponente + 15 - DefesaJogador
                         if DAOP<=0:
                             print("Golpe do inimigo nao surtiu efeito em voce!")
@@ -215,6 +253,7 @@ while i==0:
                 elif ataque==2:
                     escolha2=random.choice(evasiva)
                     if escolha2==1 and VidaOponente>0 and VidaJogador>0:
+<<<<<<< HEAD:Inspermon-Final.py
                         print("O inimigo desviou do seu golpe.Que azar !")
                         
                     elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
@@ -225,6 +264,28 @@ while i==0:
                         elif DAJ>0:
                             print("Você atacou !")
                             VidaOponente = VidaOponente - DAJ
+=======
+                        print("O inimigo desviou do seu golpe.")
+                        continue
+                    elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+                        DAJ2=Poder2Jogador - DefesaOponente
+                        if DAJ2<=0:
+                            print("Seu golpe nao surtiu efeito no inimigo.")
+                            DAJ2=0
+                        VidaOponente = VidaOponente - DAJ2
+                        
+                        if VidaOponente <= 0:
+                            print("Você derrotou o : {0}".format(inimigo))
+                            Notasmusicais=Notasmusicais+10
+                            Coins=Coins+20
+                            print("coins:",Coins)
+                            print("notas",Notasmusicais)
+                        
+                    else:
+                            print("Voce deu um ataque critico!")
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                             print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                             print("Sua vida:",VidaJogador)
                         
@@ -234,6 +295,7 @@ while i==0:
                                 Coins=Coins+20
                                 print("coins",Coins)
                                 print("notas",Notasmusicais)
+<<<<<<< HEAD:Inspermon-Final.py
                         
                     elif escolha2==2 and VidaOponente>0 and VidaJogador>0:
                             print("Voce ganhou a chance de tentar um ataque critico! Que sorte!")
@@ -258,6 +320,32 @@ while i==0:
                     escolha2=random.choice(evasiva)
                     if escolha2==1 and VidaOponente>0 and VidaJogador>0:
                         print("Voce desviou do golpe do inimigo. Que sorte!")
+=======
+                             
+
+                    escolha2=random.choice(evasiva)
+                    if escolha2==1 and VidaOponente>0 and VidaJogador>0:
+                        print("Voce desviou do golpe do inimigo.")
+                        continue
+                    elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
+                        DAOP2=PoderOponente - DefesaJogador
+                        if DAOP2<=0:
+                            print("Golpe do inimigo nao surtiu efeito em voce.")
+                            DAOP2=0
+                        VidaJogador = VidaJogador - DAOP2
+
+                        if VidaJogador <= 0:        
+                            print("Você perdeu! para o : {0}".format(inimigo))
+                    else:
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+                        print("O oponente lhe deu um ataque critico!")
+                        DAOP2=PoderOponente + 15 - DefesaJogador
+                        if DAOP2<=0:
+                            print("Golpe do inimigo nao surtiu efeito em voce.")
+                            DAOP2=0
+                        VidaJogador = VidaJogador - DAOP2
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                         
                     elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
                         DAOP=PoderOponente - DefesaJogador
@@ -311,6 +399,7 @@ while i==0:
                         if DAOP<=0:
                             print("Golpe do inimigo nao surtiu efeito em você.")
                             DAOP=0
+<<<<<<< HEAD:Inspermon-Final.py
                         elif DAOP>0:
                             print("Voce foi atacado!")
                             VidaJogador = VidaJogador - DAOP
@@ -318,6 +407,9 @@ while i==0:
                             print("Sua vida:",VidaJogador)
                             if VidaJogador <= 0:        
                                 print("Você perdeu! para o : {0}".format(inimigo))
+=======
+                        VidaJogador = VidaJogador - DAOP
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                         
                     elif escolha2==2 and VidaOponente>0 and VidaJogador>0:
                         print("O oponente tentará um ataque critico! Que azar!")
@@ -325,6 +417,7 @@ while i==0:
                         if DAOP<=0:
                             print("Golpe do inimigo nao surtiu efeito em voce!")
                             DAOP=0
+<<<<<<< HEAD:Inspermon-Final.py
                         elif DAOP>0:  
                             print("Voce foi atacado!")
                             VidaJogador = VidaJogador - DAOP
@@ -332,6 +425,14 @@ while i==0:
                             print("Sua vida:",VidaJogador)
                             if VidaJogador <= 0:        
                                 print("Você perdeu! para o : {0}".format(inimigo))    
+=======
+                        VidaJogador = VidaJogador - DAOP
+                        
+                        if VidaJogador <= 0:        
+                            print("Você perdeu! para o : {0}".format(inimigo))
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                            
                     ataque=int(input("Escolha seu ataque: Timbre de voz (1) ou Espectro Sonoro(2)"))
                     if ataque==1:
@@ -344,6 +445,7 @@ while i==0:
                             if DAJ<=0:
                                 print("Seu golpe nâo surtiu efeito no inimigo.")
                                 DAJ=0
+<<<<<<< HEAD:Inspermon-Final.py
                             elif DAJ>0:
                                 print("Você atacou !")
                                 VidaOponente = VidaOponente - DAJ
@@ -377,6 +479,35 @@ while i==0:
                                         Coins=Coins+20
                                         print("coins",Coins)
                                         print("notas",Notasmusicais)
+=======
+                            VidaOponente = VidaOponente - DAJ
+                            
+                            if VidaOponente <= 0:
+                                print("Você derrotou o : {0}".format(inimigo))
+                                Notasmusicais=Notasmusicais+10
+                                Coins=Coins+20
+                                print("coins",Coins)
+                                print("notas",Notasmusicais)
+                            print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                            print("Sua vida:",VidaJogador)
+                        else:
+                            print("Voce deu um ataque critico!")
+                            DAJ=Poder1Jogador + 15 - DefesaOponente
+                            if DAJ<=0:
+                                print("Seu golpe nao surtiu efeito no inimigo.")
+                                DAJ=0
+                            VidaOponente = VidaOponente - DAJ
+                            
+                            if VidaOponente <= 0:
+                                print("Você derrotou o : {0}".format(inimigo))
+                                Notasmusicais=Notasmusicais+10
+                                Coins=Coins+20
+                                print("coins",Coins)
+                                print("notas",Notasmusicais)
+                            print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                            print("Sua vida:",VidaJogador)
+                   
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
                     elif ataque==2:
                         escolha2=random.choice(evasiva)
             
@@ -384,6 +515,7 @@ while i==0:
                             print("O inimigo desviou do seu golpe.Que azar !")
                             
                         elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
+<<<<<<< HEAD:Inspermon-Final.py
                             DAJ=Poder1Jogador - DefesaOponente
                             if DAJ<=0:
                                 print("Seu golpe nâo surtiu efeito no inimigo.")
@@ -419,6 +551,37 @@ while i==0:
                                     Coins=Coins+20
                                     print("coins",Coins)
                                     print("notas",Notasmusicais)
+=======
+                            DAJ2=Poder2Jogador - DefesaOponente
+                            if DAJ2<=0:
+                                print("Seu golpe nao surtiu efeito no inimigo.")
+                                DAJ2=0
+                            VidaOponente = VidaOponente - DAJ2
+                            if VidaOponente <= 0:
+                                print("Você derrotou o : {0}".format(inimigo))
+                                Notasmusicais=Notasmusicais+10
+                                Coins=Coins+20
+                                print("coins:",Coins)
+                                print("notas",Notasmusicais)
+                            print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                            print("Sua vida:",VidaJogador)
+                        else:
+                            print("Voce deu um ataque critico!")
+                            DAJ2=Poder2Jogador + 15 - DefesaOponente
+
+                            if DAJ2<=0:
+                                print("Seu golpe nao surtiu efeito no inimigo.")
+                                DAJ2=0
+                            VidaOponente = VidaOponente - DAJ2  
+                            if VidaOponente <= 0:
+                                print("Você derrotou o : {0}".format(inimigo))
+                                Notasmusicais=Notasmusicais+10
+                                Coins=Coins+20
+                                print("coins:",Coins)
+                                print("notas",Notasmusicais)
+                            print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                            print("Sua vida:",VidaJogador) 
+>>>>>>> 125b2983d632c3cb717a489cf0e188eec50c179a:inspermons1.py
     
     elif inicio == 4:
         
