@@ -1,20 +1,36 @@
-import json
-def mostra_ipmon(ipmon):
-    print("Inspermon : {0}".format(ipmon["nome"]))
-    print("poder = {0}".format(ipmon["poder"]))
-    print("vida = {0}".format(ipmon["vida"]))
-    print("defesa = {0}\n".format(ipmon["defesa"]))
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr  2 20:36:35 2017
 
-    return  
+@author: isadora
+"""
 
-with open('inspermons.json') as arquivo:
-    inspermons = json.load(arquivo)
-for i in range(3):
-    print(mostra_ipmon(inspermons[i]))
-    
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 31 10:30:16 2017
+
+@author: isadora
+"""
+
+import random
+picaxu={"nome" : "picaxu",
+"poder" : 20,
+"vida" : 200,
+"defesa" : 12}
+	
+xamando={"nome" : "xamando",
+"poder" : 25,
+"vida" : 100,
+"defesa" : 10}
+	
+pidijet={"nome" : "pidijet",
+"poder" : 15,
+"vida" : 300,
+"defesa" : 10}
 
 insperdex=[]
-listadeinspermons={"picaxu":inspermons[0],'xamando':inspermons[1],"pigijet":inspermons[2]}
+listadeinspermons={"picaxu":picaxu,'xamando':xamando,"pigijet":pidijet}
+print(listadeinspermons)
 inspermoninicial=input("Qual seu inspermon inicial da lista?")
 
 i=0

@@ -1,19 +1,85 @@
 [	{
-		"nome" : "picaxu",
-		"poder" : 20,
-		"vida" : 200,
-		"defesa" : 12
+		"nome" : "Rocko",
+                "level" : 1,
+		"volume": 10,
+		"vida" :55,
+		"Barreira Sonora" : 12
 	},
 	{
-		"nome" : "xamando",
-		"poder" : 25,
+		"nome" : "Reggae",
+                "level" : 1,
+		"volume": 15,
+		"vida" : 60,
+		"Barreira Sonora" : 10
+	},
+	{
+		"nome" : "Eletro",
+                "level" : 1,
+		"volume": 18,
+		"vida" : 65,
+		"Barreira Sonora" : 15
+	},
+        {
+		"nome" : "Classico",
+                "level" : 1,
+		"volume": 15,
+		"vida" : 70,
+		"Barreira Sonora" : 20
+	},
+	{
+		"nome" : "Grid Core",
+                "level" : 2,
+		"volume": 20,
+		"vida" : 80,
+		"Barreira Sonora" : 25
+	},
+	{
+		"nome" : "Roots",
+                "level" : 2,
+		"volume": 30,
+		"vida" : 85,
+		"Barreira Sonora" : 20
+	},
+	{
+		"nome" : "Crunk",
+                "level" : 2,
+		"volume":15 ,
+		"vida" : 95,
+		"Barreira Sonora" : 20
+	},
+        {
+		"nome" : "Choral",
+                "level" : 2,
+		"volume": 20,
+		"vida" : 90,
+		"Barreira Sonora" : 25
+	},
+	{
+		"nome" : "Psychedelic",
+                "level" : 3,
+		"volume": 20,
+		"vida" : 110,
+		"Barreira Sonora" : 25
+	},
+	{
+		"nome" : "Ska",
+                "level" : 3,
+		"volume": 25,
+		"vida" : 150,
+		"Barreira Sonora" : 35
+	},
+	{
+		"nome" : "Swing",
+                "level" : 3,
+		"volume": 30,
 		"vida" : 100,
-		"defesa" : 10
+		"Barreira Sonora" : 45
 	},
-	{
-		"nome" : "pidijet",
-		"poder" : 15,
-		"vida" : 300,
-		"defesa" : 10
+        {
+		"nome" : "Opera",
+                "level" : 3,
+		"volume": 20,
+		"vida" : 120,
+		"Barreira Sonora" : 40
 	}
 ]
