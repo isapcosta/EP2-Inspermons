@@ -27,7 +27,12 @@ Jogador=[{"nome" : "Compositor","level" : 1 ,"timbre de voz" : 15,"espectro sono
          {"nome" : "Maestro","level" : 3 ,"timbre de voz" :35,"espectro sonoro":40,"vida" : 200,"Barreira Sonora" : 30}]
 Notasmusicais=0
 Coins=0
+<<<<<<< HEAD
 
+=======
+# with open(salvos.pickle) 
+# salvos=pickle.dump() 
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
 Nome_do_Jogador=input("Qual é o seu Nickname?")
 inspermoninicial=Jogador[0]   
 print("Bem vindo {0} ! Você inicia o jogo sendo {1} e tem {2} de vida,a força da sua Barreira Sonora é {3} e seus ataques: timbre de voz tem {4} de poder e o espectro sonoro {5} de poder. Ao longo da sua jornada encontrará inspermons que você pode batalhar".format(Nome_do_Jogador,inspermoninicial["nome"],inspermoninicial["vida"],inspermoninicial["Barreira Sonora"],inspermoninicial["timbre de voz"],inspermoninicial["espectro sonoro"]))   
@@ -125,7 +130,11 @@ while i==0:
         opcoes=["com","com","sem"]
         opcoes2=["sem","com"]
         opcoes3=["sem","sem","com"]
+<<<<<<< HEAD
         evasiva=[0,0,0,0,0,0,0,1,2]
+=======
+        evasiva=[0,0,0,0,0,0,0,1]
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
         if batalha==1:
             
             while VidaJogador > 0 and VidaOponente > 0:
@@ -137,14 +146,22 @@ while i==0:
                         print("O inimigo desviou do seu golpe.")
                         continue
                     elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
+<<<<<<< HEAD
                         print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                         print("Sua vida:",VidaJogador)
+=======
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                         DAJ=Poder1Jogador - DefesaOponente
                         if DAJ<=0:
                             print("Seu golpe nao surtiu efeito no inimigo.")
                             DAJ=0
                         VidaOponente = VidaOponente - DAJ
+<<<<<<< HEAD
                         
+=======
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                         
                         if VidaOponente <= 0:
                             print("Você derrotou o : {0}".format(inimigo))
@@ -152,6 +169,7 @@ while i==0:
                             Coins=Coins+20
                             print("coins",Coins)
                             print("notas",Notasmusicais)
+<<<<<<< HEAD
                         
                     else:
                             print("Voce deu um ataque critico!")
@@ -171,6 +189,8 @@ while i==0:
                                 print("notas",Notasmusicais)
                             
 
+=======
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                     escolha2=random.choice(evasiva)
                     if escolha2==1 and VidaOponente>0 and VidaJogador>0:
                         print("Voce desviou do golpe do inimigo.")
@@ -183,6 +203,7 @@ while i==0:
                         VidaJogador = VidaJogador - DAOP
                         if VidaJogador <= 0:        
                             print("Você perdeu! para o : {0}".format(inimigo))
+<<<<<<< HEAD
                     else:
                         print("O oponente lhe deu um ataque critico!")
                         print("Vida do {0} : {1}".format(inimigo,VidaOponente))
@@ -196,6 +217,8 @@ while i==0:
                         if VidaJogador <= 0:        
                             print("Você perdeu! para o : {0}".format(inimigo))
                         
+=======
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                     
                 elif ataque==2:
                     escolha2=random.choice(evasiva)
@@ -203,13 +226,21 @@ while i==0:
                         print("O inimigo desviou do seu golpe.")
                         continue
                     elif escolha2==0 and VidaOponente>0 and VidaJogador>0:
+<<<<<<< HEAD
                         print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                         print("Sua vida:",VidaJogador)
+=======
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                         DAJ2=Poder2Jogador - DefesaOponente
                         if DAJ2<=0:
                             print("Seu golpe nao surtiu efeito no inimigo.")
                             DAJ2=0
                         VidaOponente = VidaOponente - DAJ2
+<<<<<<< HEAD
+=======
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                         
                         if VidaOponente <= 0:
                             print("Você derrotou o : {0}".format(inimigo))
@@ -217,6 +248,7 @@ while i==0:
                             Coins=Coins+20
                             print("coins:",Coins)
                             print("notas",Notasmusicais)
+<<<<<<< HEAD
                         
                     else:
                             print("Voce deu um ataque critico!")
@@ -236,6 +268,8 @@ while i==0:
                                 print("notas",Notasmusicais)
                              
 
+=======
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                     escolha2=random.choice(evasiva)
                     if escolha2==1 and VidaOponente>0 and VidaJogador>0:
                         print("Voce desviou do golpe do inimigo.")
@@ -249,6 +283,7 @@ while i==0:
 
                         if VidaJogador <= 0:        
                             print("Você perdeu! para o : {0}".format(inimigo))
+<<<<<<< HEAD
                     else:
                         print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                         print("Sua vida:",VidaJogador)
@@ -263,6 +298,8 @@ while i==0:
                             print("Você perdeu! para o : {0}".format(inimigo))
                         
                     
+=======
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                     
         if batalha==2:
 
@@ -290,6 +327,7 @@ while i==0:
                             print("Golpe do inimigo nao surtiu efeito em voce.")
                             DAOP=0
                         VidaJogador = VidaJogador - DAOP
+<<<<<<< HEAD
                         
                         if VidaJogador <= 0:        
                             print("Você perdeu! para o : {0}".format(inimigo))
@@ -307,6 +345,12 @@ while i==0:
                             print("Você perdeu! para o : {0}".format(inimigo))
                         print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                         print("Sua vida:",VidaJogador)
+=======
+                        print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                        print("Sua vida:",VidaJogador)
+                        if VidaJogador <= 0:        
+                            print("Você perdeu! para o : {0}".format(inimigo))
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                            
                     ataque=int(input("Escolha seu ataque: Timbre de voz (1) ou Espectro Sonoro(2)"))
                     if ataque==1:
@@ -320,6 +364,7 @@ while i==0:
                                 print("Seu golpe nao surtiu efeito no inimigo.")
                                 DAJ=0
                             VidaOponente = VidaOponente - DAJ
+<<<<<<< HEAD
                             
                             if VidaOponente <= 0:
                                 print("Você derrotou o : {0}".format(inimigo))
@@ -345,6 +390,17 @@ while i==0:
                                 print("notas",Notasmusicais)
                             print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                             print("Sua vida:",VidaJogador)
+=======
+                            print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                            print("Sua vida:",VidaJogador)
+                        
+                        if VidaOponente <= 0:
+                            print("Você derrotou o : {0}".format(inimigo))
+                            Notasmusicais=Notasmusicais+10
+                            Coins=Coins+20
+                            print("coins",Coins)
+                            print("notas",Notasmusicais)
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                    
                     elif ataque==2:
                         escolha2=random.choice(evasiva)
@@ -357,6 +413,7 @@ while i==0:
                                 print("Seu golpe nao surtiu efeito no inimigo.")
                                 DAJ2=0
                             VidaOponente = VidaOponente - DAJ2
+<<<<<<< HEAD
                             if VidaOponente <= 0:
                                 print("Você derrotou o : {0}".format(inimigo))
                                 Notasmusicais=Notasmusicais+10
@@ -373,12 +430,18 @@ while i==0:
                                 print("Seu golpe nao surtiu efeito no inimigo.")
                                 DAJ2=0
                             VidaOponente = VidaOponente - DAJ2  
+=======
+                            print("Vida do {0} : {1}".format(inimigo,VidaOponente))
+                            print("Sua vida:",VidaJogador)
+                            
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
                             if VidaOponente <= 0:
                                 print("Você derrotou o : {0}".format(inimigo))
                                 Notasmusicais=Notasmusicais+10
                                 Coins=Coins+20
                                 print("coins:",Coins)
                                 print("notas",Notasmusicais)
+<<<<<<< HEAD
                             print("Vida do {0} : {1}".format(inimigo,VidaOponente))
                             print("Sua vida:",VidaJogador) 
     
@@ -404,6 +467,23 @@ while i==0:
         arqload=arqload.upper()
         # carregar
         with open(arqload+".py", 'rb') as f:
+=======
+    
+    elif inicio == 4:
+        # arqsave=input("Qual o nome do seu arquivo?")
+        # arqsave=arqsave.lower()
+        # salvos.append(arqsave)
+        # salvar
+        with open("salvo.py", 'wb') as f:
+            pickle.dump([Nome_do_Jogador, Notasmusicais, Coins, insperdex], f, protocol=2)
+            print("O jogo foi salvo com sucesso!")
+    elif inicio == 5:
+        # print(salvos, " ")
+        # arqload=input("Qual o arquivo voce deseja carreggar?")
+        # arqload=arqload.lower()
+        # carregar
+        with open("salvo.py", 'rb') as f:
+>>>>>>> bcab75686cc139f60b900d1ae5aa71739d7a1286
             Nome_do_Jogador, Notasmusicais, Coins, insperdex = pickle.load(f)
             print("O jogo foi carregado com sucesso!")                            
 insperdex=set(insperdex)
